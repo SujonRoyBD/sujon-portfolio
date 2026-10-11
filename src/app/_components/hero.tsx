@@ -188,21 +188,6 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Floating Badge 1: Next.js & React */}
-              <motion.div
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -left-4 sm:-left-6 glass-card px-3.5 py-2 rounded-2xl flex items-center gap-2.5 shadow-xl border border-white/10 backdrop-blur-xl bg-[#0c1322]/90 z-20"
-              >
-                <div className="w-7 h-7 rounded-lg bg-black text-white flex items-center justify-center font-bold text-xs border border-white/10">
-                  ▲
-                </div>
-                <div>
-                  <div className="text-[10px] font-medium text-slate-400">Core Focus</div>
-                  <div className="text-xs font-bold text-white">Next.js & React 19</div>
-                </div>
-              </motion.div>
-
               {/* Floating Badge 2: Frontend Developer & Backend Learner */}
               <motion.div
                 animate={{ y: [0, 8, 0] }}
