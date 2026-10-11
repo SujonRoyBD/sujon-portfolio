@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090D16;
+  --foreground: #FFFFFF;
+  --primary-accent: #FF7639;
+  --secondary-accent: #8B5CF6;
+  --card-bg: rgba(18, 24, 38, 0.75);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --muted: #94A3B8;
+  --status-green: #22C55E;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090D16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7639;
+}
+
+::selection {
+  background: #FF7639;
+  color: #FFFFFF;
+}
+
+/* সেকশনের উচ্চতা ও মার্জিন কন্ট্রোল */
+.site-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .site-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* কন্টেন্ট কন্টেইনার */
+.site-container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1280px) {
+  .site-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* সেকশন হেডিং স্টাইল */
+.site-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .site-heading {
+    font-size: 2.75rem;
+  }
+}
+
+/* হেডিংয়ের নিচের ডেকোরেটিভ গ্রেডিয়েন্ট লাইন */
+.site-heading-divider {
+  width: 100px;
+  height: 4px;
+  margin: 0.75rem auto 2.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #FF7639, #8B5CF6);
+}
+
+/* Glow & Glass Utilities */
+.glass-card {
+  background: rgba(18, 24, 38, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 118, 57, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(255, 118, 57, 0.15);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FF7639 0%, #FF9F68 50%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 50%, #FF7639 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ambient glow orb animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.15) translate(20px, -20px);
+    opacity: 0.55;
+  }
+}
+
+.ambient-glow {
+  animation: pulseGlow 12s ease-in-out infinite;
+}

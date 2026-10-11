@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="60%" stop-color="#161b26" />
+      <stop offset="100%" stop-color="#1b122c" />
+    </linearGradient>
+    <linearGradient id="glowOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7639" />
+      <stop offset="100%" stop-color="#FF5100" />
+    </linearGradient>
+    <filter id="blur3">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg3)" />
+  <circle cx="200" cy="200" r="180" fill="#FF7639" opacity="0.15" filter="url(#blur3)" />
+  <circle cx="1050" cy="500" r="220" fill="#8B5CF6" opacity="0.18" filter="url(#blur3)" />
+
+  <!-- App Window -->
+  <rect x="80" y="60" width="1120" height="600" rx="16" fill="#0f1624" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+  
+  <path d="M 80,60 L 1200,60 A 16,16 0 0,1 1200,108 L 80,108 Z" fill="#172032" />
+  <circle cx="115" cy="84" r="6" fill="#EF4444" />
+  <circle cx="135" cy="84" r="6" fill="#F59E0B" />
+  <circle cx="155" cy="84" r="6" fill="#10B981" />
+  <text x="220" y="88" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">ShopVibe — Headless Next.js Storefront</text>
+
+  <!-- Banner / Hero in Store -->
+  <rect x="110" y="130" width="1060" height="180" rx="12" fill="#162238" stroke="rgba(255,255,255,0.06)" />
+  <text x="150" y="190" fill="#FF7639" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">SUMMER DROP 2026</text>
+  <text x="150" y="235" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="800">Ultra-Light Minimalist Wear</text>
+  <text x="150" y="270" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Shop high performance tech-wear with instant cart checkout</text>
+  <rect x="940" y="230" width="190" height="46" rx="8" fill="url(#glowOrange)" />
+  <text x="1035" y="258" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Shop Now ⚡</text>
+
+  <!-- Product Grid (3 cards) -->
+  <!-- Card 1 -->
+  <rect x="110" y="335" width="335" height="285" rx="12" fill="#162238" stroke="rgba(255,255,255,0.08)" />
+  <rect x="125" y="350" width="305" height="150" rx="8" fill="#1c2b46" />
+  <circle cx="277" cy="425" r="45" fill="#FF7639" opacity="0.3" />
+  <text x="277" y="432" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">Tech Hoodie Pro</text>
+  <text x="135" y="530" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Cyber Shield Jacket</text>
+  <text x="135" y="555" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Waterproof • Thermal mesh</text>
+  <text x="135" y="590" fill="#FF7639" font-family="system-ui, sans-serif" font-size="18" font-weight="700">$189.00</text>
+
+  <!-- Card 2 -->
+  <rect x="472" y="335" width="335" height="285" rx="12" fill="#162238" stroke="rgba(255,255,255,0.08)" />
+  <rect x="487" y="350" width="305" height="150" rx="8" fill="#1c2b46" />
+  <circle cx="639" cy="425" r="45" fill="#8B5CF6" opacity="0.3" />
+  <text x="639" y="432" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">Wireless Buds X</text>
+  <text x="497" y="530" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Active ANC Earphones</text>
+  <text x="497" y="555" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Spatial Audio • 40h Battery</text>
+  <text x="497" y="590" fill="#FF7639" font-family="system-ui, sans-serif" font-size="18" font-weight="700">$129.00</text>
+
+  <!-- Card 3 -->
+  <rect x="835" y="335" width="335" height="285" rx="12" fill="#162238" stroke="rgba(255,255,255,0.08)" />
+  <rect x="850" y="350" width="305" height="150" rx="8" fill="#1c2b46" />
+  <circle cx="1002" cy="425" r="45" fill="#22c55e" opacity="0.3" />
+  <text x="1002" y="432" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">Smart Kinetic Bag</text>
+  <text x="860" y="530" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Modular Backpack</text>
+  <text x="860" y="555" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">TSA Approved • Solar Panel</text>
+  <text x="860" y="590" fill="#FF7639" font-family="system-ui, sans-serif" font-size="18" font-weight="700">$145.00</text>
+</svg>

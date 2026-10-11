@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="avatarAura" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FF7639" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#090D16" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2433" />
+      <stop offset="50%" stop-color="#141926" />
+      <stop offset="100%" stop-color="#0d111a" />
+    </linearGradient>
+    <linearGradient id="neonRimOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF7639" />
+      <stop offset="100%" stop-color="#FF5100" />
+    </linearGradient>
+    <linearGradient id="neonRimPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d99879" />
+      <stop offset="100%" stop-color="#b67150" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="400" cy="400" r="380" fill="url(#avatarAura)" filter="url(#glow)" />
+
+  <!-- Abstract Tech Geometric Rings in Background -->
+  <circle cx="400" cy="400" r="280" fill="none" stroke="#FF7639" stroke-width="1.5" stroke-dasharray="12 12" opacity="0.35" />
+  <circle cx="400" cy="400" r="330" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="6 14" opacity="0.3" />
+
+  <!-- Floating Tech Nodes -->
+  <circle cx="200" cy="220" r="6" fill="#FF7639" opacity="0.8" />
+  <circle cx="630" cy="240" r="8" fill="#8B5CF6" opacity="0.8" />
+  <circle cx="160" cy="560" r="5" fill="#22C55E" opacity="0.7" />
+  <circle cx="660" cy="580" r="6" fill="#38BDF8" opacity="0.7" />
+
+  <!-- Body / Shoulders -->
+  <path d="M 160,1000 C 160,820 250,730 400,730 C 550,730 640,820 640,1000 Z" fill="url(#jacketGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+  <!-- Neon Rim on Shoulders -->
+  <path d="M 160,1000 C 160,820 250,730 320,730" fill="none" stroke="url(#neonRimOrange)" stroke-width="3" opacity="0.85" />
+  <path d="M 640,1000 C 640,820 550,730 480,730" fill="none" stroke="url(#neonRimPurple)" stroke-width="3" opacity="0.85" />
+
+  <!-- T-shirt / Inner V-neck -->
+  <path d="M 330,730 L 400,820 L 470,730 Z" fill="#090d16" />
+  
+  <!-- Neck -->
+  <rect x="360" y="580" width="80" height="160" rx="20" fill="url(#faceGrad)" />
+  <rect x="360" y="580" width="80" height="160" rx="20" fill="#000" opacity="0.1" />
+
+  <!-- Head / Face -->
+  <ellipse cx="400" cy="460" rx="130" ry="160" fill="url(#faceGrad)" />
+
+  <!-- Modern Hair -->
+  <path d="M 270,440 C 260,330 300,240 400,240 C 490,240 540,320 530,440 C 510,400 460,370 400,370 C 340,370 290,400 270,440 Z" fill="#17171d" />
+  <path d="M 310,270 C 350,210 450,220 500,270 C 460,250 420,245 370,255 Z" fill="#2b2b36" />
+
+  <!-- Ears -->
+  <ellipse cx="265" cy="470" rx="16" ry="26" fill="#c47d5c" />
+  <ellipse cx="535" cy="470" rx="16" ry="26" fill="#b16c4c" />
+
+  <!-- Eyes & Eyebrows -->
+  <path d="M 310,410 C 330,400 360,405 370,415" fill="none" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+  <path d="M 430,415 C 440,405 470,400 490,410" fill="none" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+  
+  <ellipse cx="340" cy="445" rx="12" ry="8" fill="#1c1917" />
+  <circle cx="343" cy="443" r="3" fill="#ffffff" />
+  <ellipse cx="460" cy="445" rx="12" ry="8" fill="#1c1917" />
+  <circle cx="463" cy="443" r="3" fill="#ffffff" />
+
+  <!-- Stylish Glasses with Subtle Glassmorphic Reflections -->
+  <rect x="305" y="420" width="80" height="52" rx="12" fill="rgba(255,255,255,0.06)" stroke="#FF7639" stroke-width="2.5" />
+  <rect x="415" y="420" width="80" height="52" rx="12" fill="rgba(255,255,255,0.06)" stroke="#8B5CF6" stroke-width="2.5" />
+  <line x1="385" y1="445" x2="415" y2="445" stroke="#cbd5e1" stroke-width="3" />
+  <path d="M 315,428 L 365,428" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round" />
+  <path d="M 425,428 L 475,428" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Nose -->
+  <path d="M 400,445 L 396,490 L 406,490" fill="none" stroke="#a25c3b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Smile -->
+  <path d="M 365,530 C 385,555 415,555 435,530" fill="none" stroke="#5a2e1b" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Subtle beard shadow -->
+  <path d="M 330,510 C 330,590 470,590 470,510" fill="none" stroke="#783c21" stroke-width="2" stroke-dasharray="2 3" opacity="0.3" />
+
+  <!-- Tech Developer Headset -->
+  <path d="M 260,420 C 250,300 550,300 540,420" fill="none" stroke="#334155" stroke-width="7" />
+  <rect x="245" y="440" width="22" height="48" rx="8" fill="#FF7639" />
+  <rect x="533" y="440" width="22" height="48" rx="8" fill="#8B5CF6" />
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e102d" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7639" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF7639" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </linearGradient>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="180" r="180" fill="#FF7639" opacity="0.18" filter="url(#blurFilter)" />
+  <circle cx="1080" cy="540" r="220" fill="#8B5CF6" opacity="0.22" filter="url(#blurFilter)" />
+
+  <!-- Browser Window Wrapper -->
+  <rect x="80" y="60" width="1120" height="600" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <path d="M 80,60 L 1200,60 A 16,16 0 0,1 1200,108 L 80,108 Z" fill="#182234" />
+  <circle cx="115" cy="84" r="6" fill="#EF4444" />
+  <circle cx="135" cy="84" r="6" fill="#F59E0B" />
+  <circle cx="155" cy="84" r="6" fill="#10B981" />
+  
+  <rect x="220" y="72" width="600" height="24" rx="6" fill="#0f172a" />
+  <text x="520" y="88" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">https://devflow-community.io/questions/modern-nextjs-architecture</text>
+
+  <!-- Content Section - Dev Community Platform -->
+  <!-- Left Sidebar -->
+  <rect x="110" y="130" width="220" height="490" rx="10" fill="#141d2e" stroke="rgba(255,255,255,0.06)" />
+  <rect x="135" y="160" width="170" height="18" rx="4" fill="url(#primaryGrad)" opacity="0.85" />
+  <rect x="135" y="200" width="140" height="12" rx="3" fill="#334155" />
+  <rect x="135" y="230" width="120" height="12" rx="3" fill="#334155" />
+  <rect x="135" y="260" width="150" height="12" rx="3" fill="#334155" />
+  <rect x="135" y="290" width="110" height="12" rx="3" fill="#334155" />
+
+  <!-- Main Feed Question Card -->
+  <rect x="360" y="130" width="800" height="220" rx="12" fill="#141d2e" stroke="rgba(255,118,57,0.3)" />
+  <!-- Question Title -->
+  <text x="390" y="170" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="700">How to optimize server-side state in Next.js 14 App Router?</text>
+  <text x="390" y="200" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Asked by @sujon_developer • 34 votes • 12 answers • 1.4k views</text>
+  
+  <!-- Code snippet in question -->
+  <rect x="390" y="220" width="740" height="70" rx="8" fill="#090d16" stroke="rgba(255,255,255,0.08)" />
+  <text x="410" y="248" fill="#FF7639" font-family="monospace" font-size="13">export async function</text>
+  <text x="590" y="248" fill="#60a5fa" font-family="monospace" font-size="13">fetchCommunityThreads</text>
+  <text x="760" y="248" fill="#e2e8f0" font-family="monospace" font-size="13">({ filter, page = 1 }) {</text>
+  <text x="430" y="272" fill="#94a3b8" font-family="monospace" font-size="13">const result = await db.query(filter).limit(10).lean(); return result;</text>
+
+  <!-- Answer Card -->
+  <rect x="360" y="375" width="800" height="245" rx="12" fill="#141d2e" stroke="rgba(139,92,246,0.3)" />
+  <rect x="390" y="400" width="110" height="26" rx="13" fill="#22c55e" opacity="0.18" />
+  <text x="445" y="418" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">✓ ACCEPTED</text>
+  
+  <text x="520" y="418" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14" font-weight="600">AI Verified Answer with Next.js Cache Revalidation</text>
+  
+  <text x="390" y="455" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Use 'unstable_cache' or Next.js 14 fetch tags to ensure instant atomic data invalidation.</text>
+  
+  <!-- Tags -->
+  <rect x="390" y="500" width="80" height="28" rx="6" fill="#1e293b" />
+  <text x="430" y="519" fill="#FF7639" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Next.js 14</text>
+  
+  <rect x="480" y="500" width="90" height="28" rx="6" fill="#1e293b" />
+  <text x="525" y="519" fill="#8B5CF6" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">TypeScript</text>
+
+  <rect x="580" y="500" width="80" height="28" rx="6" fill="#1e293b" />
+  <text x="620" y="519" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">MongoDB</text>
+</svg>

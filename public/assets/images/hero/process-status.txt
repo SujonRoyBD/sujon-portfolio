@@ -1,0 +1,1 @@
+Success: Processed 819x1024, bgPixels=345440, cutout & studio images created!

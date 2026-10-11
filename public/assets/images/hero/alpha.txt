@@ -1,0 +1,1 @@
+width=290, height=295, transparent=84163, opaque=1387

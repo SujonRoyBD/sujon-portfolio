@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#141126" />
+      <stop offset="100%" stop-color="#24133d" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <filter id="blur4">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg4)" />
+  <circle cx="250" cy="180" r="220" fill="#8B5CF6" opacity="0.25" filter="url(#blur4)" />
+  <circle cx="1050" cy="520" r="200" fill="#FF7639" opacity="0.18" filter="url(#blur4)" />
+
+  <!-- App Window -->
+  <rect x="80" y="60" width="1120" height="600" rx="16" fill="#0d111d" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+  
+  <path d="M 80,60 L 1200,60 A 16,16 0 0,1 1200,108 L 80,108 Z" fill="#171929" />
+  <circle cx="115" cy="84" r="6" fill="#EF4444" />
+  <circle cx="135" cy="84" r="6" fill="#F59E0B" />
+  <circle cx="155" cy="84" r="6" fill="#10B981" />
+  <text x="220" y="88" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">OmniAI Studio — Multimodal Reasoning Lab</text>
+
+  <!-- Left Sidebar Models & Prompts -->
+  <rect x="110" y="130" width="260" height="490" rx="12" fill="#131828" stroke="rgba(255,255,255,0.06)" />
+  <text x="135" y="170" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">ACTIVE MODELS</text>
+  
+  <rect x="130" y="190" width="220" height="46" rx="8" fill="#1e2238" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="150" y="218" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Gemini 1.5 Pro</text>
+  <circle cx="330" cy="213" r="5" fill="#22c55e" />
+
+  <rect x="130" y="248" width="220" height="46" rx="8" fill="#191c2c" />
+  <text x="150" y="276" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Claude 3.5 Sonnet</text>
+
+  <rect x="130" y="306" width="220" height="46" rx="8" fill="#191c2c" />
+  <text x="150" y="334" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">GPT-4o Omnimodal</text>
+
+  <!-- Main Chat Workspace -->
+  <rect x="400" y="130" width="760" height="410" rx="12" fill="#131828" stroke="rgba(255,255,255,0.06)" />
+  
+  <!-- User Query -->
+  <rect x="430" y="160" width="700" height="60" rx="10" fill="#1c233a" />
+  <text x="455" y="196" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14">Design an optimized Next.js 14 caching strategy with zero waterfalls.</text>
+
+  <!-- AI Response Card with streaming cursor -->
+  <rect x="430" y="240" width="700" height="270" rx="10" fill="#0d111d" stroke="rgba(139,92,246,0.3)" />
+  <text x="455" y="280" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="14" font-weight="700">OmniAI Analysis & Code Matrix:</text>
+  
+  <text x="455" y="315" fill="#e2e8f0" font-family="monospace" font-size="13">// 1. Leverage parallel route fetching with Suspense boundaries</text>
+  <text x="455" y="340" fill="#FF7639" font-family="monospace" font-size="13">const [user, posts] = await Promise.all([getUser(), getPosts()]);</text>
+  <text x="455" y="375" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">This completely eliminates blocking sequential waterfalls, lowering TTFB to 80ms.</text>
+  
+  <rect x="455" y="420" width="160" height="36" rx="6" fill="url(#purpleGlow)" />
+  <text x="535" y="443" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Copy Code Snippet</text>
+
+  <!-- Input Prompt Box -->
+  <rect x="400" y="560" width="760" height="60" rx="12" fill="#131828" stroke="rgba(255,255,255,0.1)" />
+  <text x="430" y="596" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">Ask OmniAI to generate schema, analyze telemetry, or refactor code...</text>
+  <circle cx="1125" cy="590" r="18" fill="url(#purpleGlow)" />
+  <text x="1125" y="595" fill="#ffffff" font-size="14" text-anchor="middle">↑</text>
+</svg>
